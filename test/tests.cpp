@@ -19,9 +19,9 @@ TEST(global, main){
 	HR.load_data("/tmp/in.txt");
 	HR.print_statistic("/tmp/out.txt");
 	ifstream res("/tmp/out.txt");
-	string test;
-	res >> test;
+	char test[100];
+	getline(res, test);
 	string right;
 	right = "1  RTRT  Cleaner  8100";
-	EXPECT_STREQ(right.c_str(), test.c_str());
+	EXPECT_STREQ(right.c_str(), test);
 }
