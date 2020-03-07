@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 # Make PROJECT_SOURCE_DIR, PROJECT_BINARY_DIR, and PROJECT_NAME available.
-set(PROJECT_NAME HRdepartment) 
+set(PROJECT_NAME task1) 
 project(${PROJECT_NAME})
 
 set(CMAKE_CXX_FLAGS "-g -Wall -fpermissive")
@@ -22,10 +22,10 @@ set(SRC_FILES ${PROJECT_SOURCE_DIR}/src/Manufacture.cpp	${PROJECT_SOURCE_DIR}/sr
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_library(HRdepartment ${SRC_FILES})
-add_executable(app ${PROJECT_SOURCE_DIR}/src/main.cpp)
+add_library(task1_lib ${SRC_FILES})
+add_executable(task1 ${PROJECT_SOURCE_DIR}/src/main.cpp)
 
-target_link_libraries(app HRdepartment)
+target_link_libraries(app task1_lib)
 
 ################################
 # Testing
@@ -53,7 +53,7 @@ if (BUILD_TESTS)
   target_link_libraries(runUnitTests gtest gtest_main)
 
   # Extra linking for the project.
-  target_link_libraries(runUnitTests HRdepartment)
+  target_link_libraries(runUnitTests task1_lib)
 
   # This is so you can do 'make test' to see all your tests run, instead of
   # manually running the executable runUnitTests to see those specific tests.
