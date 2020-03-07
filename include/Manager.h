@@ -25,10 +25,10 @@ protected:
 
 class ProjectManager : public Manager{
 public:
-	ProjectManager(int id, string name, string position, string project, int budget, int count, int part): Engineer(id,name,position,project,budget,count,part){ this->payment += getHsalary(count, budget); };
+	ProjectManager(int id, string name, string position, string project, int budget, int count, int part): Manager(id,name,position,project,budget,count,part){ this->payment += getHsalary(count, budget); };
 };
 
 class SeniorManager : public Manager{
 public:
-	SeniorManager(int id, string name, string position, string project, int all_budget, int all_count): Engineer(id,name,position,project,all_budget,count,part){ this->payment += getHsalary(count, all_budget); };
+	SeniorManager(int id, string name, string position, string project, int all_budget, int all_count): Manager(id,name,position,project,all_budget,count,part){ this->payment += getHsalary(count, all_budget); };
 };
