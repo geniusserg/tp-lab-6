@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
+#include <iostream.h>
 #include "Manufacture.h"
 using namespace std;
 TEST(global, main){
@@ -19,9 +20,9 @@ TEST(global, main){
 	HR.load_data("/tmp/in.txt");
 	HR.print_statistic("/tmp/out.txt");
 	ifstream res("/tmp/out.txt");
-	char test[100];
+	string test;
 	getline(res, test);
 	string right;
 	right = "1  RTRT  Cleaner  8100";
-	EXPECT_STREQ(right.c_str(), test);
+	EXPECT_STREQ(right.c_str(), test.c_str());
 }
