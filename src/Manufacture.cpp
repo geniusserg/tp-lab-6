@@ -121,7 +121,7 @@ int Manufacture::load_data(string filename){
 			}
 			if (position == "ProjectManager") {
 				file >> project;
-				employee.push_back(new ProjectManager(id,name,position, project, getBudget(project), getCount(project), part);
+				employee.push_back(new ProjectManager(id,name,position, project, getBudget(project), getCount(project), part));
 			}
 			if (position == "DeveloperTeamLeader") {
 				file >> base >> worktime >> project >> part;
