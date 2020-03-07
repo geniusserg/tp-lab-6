@@ -19,7 +19,7 @@ protected:
 	}
 	
 	int getPsalary(int budget, float part) override { return (int)(budget*(part/100)); };
-	int getHsalary(int count, int budget) override { return  (int)(count*(budget*(5/1000)));};
+	int getHsalary(int count, int budget) override { return  (int)((count*budget)/1000);};
 }; 
 
 
