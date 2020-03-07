@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <fstream>
-#include <iostream.h>
+#include <iostream>
 #include "Manufacture.h"
 using namespace std;
 TEST(global, main){
