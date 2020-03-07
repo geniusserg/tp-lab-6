@@ -23,6 +23,5 @@ int main(){
 	file.close();
 	HR.load_data("/tmp/in.txt");
 	HR.print_statistic("/tmp/out.txt");
-	cout << endl << HR.getCount();
 	return 0;
 }

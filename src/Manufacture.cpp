@@ -98,7 +98,6 @@ int Manufacture::load_data(string filename){
 	string project;
 	int part;
 	int base;
-	//int inferior;
 
 	if (file.is_open()) {
 		while (!file.eof()) {
@@ -125,7 +124,6 @@ int Manufacture::load_data(string filename){
 			}
 			if (position == "DeveloperTeamLeader") {
 				file >> base >> worktime >> project >> part;
-				cout << getCount(project, "Programmer");
 				employee.push_back(new TeamLeader(id,name,position, worktime, base, project, getBudget( project) ,part, getCount(project, "Programmer")));
 			}
 			if (position == "TestingTeamLeader") {
