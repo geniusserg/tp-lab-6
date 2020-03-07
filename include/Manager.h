@@ -30,5 +30,5 @@ public:
 
 class SeniorManager : public Manager{
 public:
-	SeniorManager(int id, string name, string position, string project, int all_budget, int all_count): Manager(id,name,position,project,all_budget,count,part){ this->payment += getHsalary(count, all_budget); };
+	SeniorManager(int id, string name, string position, string project, int all_budget, int all_count): Manager(id,name,position,project,all_budget,all_count,10){ this->payment += getHsalary(count, all_budget); };
 };
