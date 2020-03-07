@@ -3,7 +3,7 @@
 #include <vector>
 #include <fstream>
 #include "Manufacture.h"
-
+using namespace std;
 TEST(global, main){
 	cout << "start";
 	Manufacture HR;
@@ -21,5 +21,5 @@ TEST(global, main){
 	ifstream res("/tmp/out.txt");
 	string test;
 	res >> test;
-	EXPECT_STREQ("1  RTRT  Cleaner  8100", test);
+	EXPECT_STREQ((string)"1  RTRT  Cleaner  8100", test);
 }
