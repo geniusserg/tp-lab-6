@@ -23,5 +23,5 @@ TEST(global, main){
 	res >> test;
 	string right;
 	right = "1  RTRT  Cleaner  8100";
-	EXPECT_STREQ(right.c_str(), test.c_srt());
+	EXPECT_STREQ(right.c_str(), test.c_str());
 }
