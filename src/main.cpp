@@ -21,7 +21,7 @@ int main(){
 	file <<  "4 WETET DeveloperTeamLeader 100 100 proj 10\n";
 	file <<  "5 WETET TestingTeamLeader 78 190 proj 10\n";
 	file <<  "6 WTY ProjectManager proj 20\n";
-	file <<  "6 WTY SeniorManager\n";
+	file <<  "6 WTY SeniorManager";
 	file.close();
 	HR.load_data("/tmp/in.txt");
 	HR.print_statistic("/tmp/out.txt");

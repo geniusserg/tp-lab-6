@@ -120,7 +120,7 @@ int Manufacture::load_data(string filename){
 				employee.push_back(new Tester( id, name, position, worktime, base , project, getBudget( project), part));
 			}
 			if (position == "ProjectManager") {
-				file >> project;
+				file >> project >> part;
 				employee.push_back(new ProjectManager(id,name,position, project, getBudget(project), getCount(project), part));
 			}
 			if (position == "DeveloperTeamLeader") {
