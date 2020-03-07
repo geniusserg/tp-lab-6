@@ -3,8 +3,6 @@
 using namespace std;
 
 int main(){
-	
-	cout << "start";
 	Manufacture HR;
 	ofstream file2;
 	file2.open("/tmp/in2.txt",ios_base::out); 
@@ -25,6 +23,6 @@ int main(){
 	file.close();
 	HR.load_data("/tmp/in.txt");
 	HR.print_statistic("/tmp/out.txt");
-	
+	cout << endl << HR.getCount();
 	return 0;
 }
