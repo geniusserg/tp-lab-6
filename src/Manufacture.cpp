@@ -13,6 +13,7 @@ void Manufacture::print_statistic(string filename){
 		file << emp->print();
 		cout << emp->print();
 	}
+	file.close();
 }
 
 int Manufacture::load_project_data(string filename){
