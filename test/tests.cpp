@@ -21,5 +21,7 @@ TEST(global, main){
 	ifstream res("/tmp/out.txt");
 	string test;
 	res >> test;
-	EXPECT_STREQ((string)"1  RTRT  Cleaner  8100", test);
+	string right;
+	right = "1  RTRT  Cleaner  8100";
+	EXPECT_STREQ(right.c_str(), test.c_srt());
 }
