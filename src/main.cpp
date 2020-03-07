@@ -23,5 +23,6 @@ int main(){
 	file.close();
 	HR.load_data("/tmp/in.txt");
 	HR.print_statistic("/tmp/out.txt");
+	cout << (int)HR.getCount()*HR.getWholeBudget*(5/1000);
 	return 0;
 }
